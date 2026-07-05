@@ -1,0 +1,1303 @@
+:root {
+    --TitleTexts: rgb(247, 248, 248);
+    --ParagraphTextLight: rgb(208, 214, 224);
+    --ParagraphTextDark: rgb(138, 143, 152);
+    --BgBlack: rgb(8, 9, 10);
+    --BorderColor: rgb(33, 34, 35);
+    --: ;
+    --: ;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../Font/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    font-family: inter;
+    color: rgb(247, 248, 248);
+    background-color: var(--BgBlack);
+}
+
+/*==================#1 HEADER STYLE ==================*/
+/*====================================================*/
+header {
+    background-color: rgb(9, 9, 10);
+    width: 100%;
+    border-bottom: 1px solid rgb(33, 34, 35);
+    position: sticky;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+
+    >section {
+        max-width: 1285px;
+        padding: 20px 0;
+        justify-content: space-between;
+        position: relative;
+
+        /* left */
+        >figure {
+            width: 90px;
+            height: 30px;
+
+            >a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+
+                }
+            }
+
+        }
+
+        /* right */
+        >div {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            column-gap: 15px;
+
+            /* menu */
+            >nav {
+
+                >ul {
+                    display: flex;
+                    align-items: center;
+
+                    >li {
+                        color: var(--ParagraphTextDark);
+                        text-transform: capitalize;
+
+                        >a {
+                            padding: 8px 13px;
+                            transition: 0.4s;
+                            border-radius: 50px;
+
+                            &:hover {
+                                background-color: #1d1d1d;
+                            }
+                        }
+
+                        /* dropdown 1 */
+                        &:first-of-type {
+
+                            >div {
+                                width: 67%;
+                                background-color: var(--BgBlack);
+                                position: absolute;
+                                top: 100%;
+                                left: 33%;
+                                border: 1px solid var(--BorderColor);
+                                border-radius: 15px;
+                                padding: 7px;
+                                transition: 0.4s;
+                                opacity: 0;
+                                visibility: hidden;
+
+                                >div {
+                                    display: flex;
+                                    padding: 10px;
+                                    width: 100%;
+                                    border-radius: 8px;
+
+                                    /* top */
+                                    &:first-of-type {
+                                        background-color: #151617;
+                                        justify-content: space-between;
+                                        border: 1px solid var(--BorderColor);
+
+                                        /* cells */
+                                        >div {
+                                            width: 33.333%;
+                                            border-radius: 5px;
+                                            display: flex;
+                                            flex-wrap: wrap;
+
+                                            >a {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                transition: 0.4s;
+                                                padding: 10px;
+                                                border-radius: 8px;
+                                                row-gap: 5px;
+
+                                                >span {
+
+                                                    &:first-of-type {
+                                                        width: 100%;
+                                                        color: var(--ParagraphTextDark);
+                                                    }
+
+                                                    &:last-of-type {
+                                                        width: 80%;
+                                                        color: var(--ParagraphTextLight);
+                                                    }
+                                                }
+
+                                                &:hover {
+                                                    background-color: #1c1d1e;
+                                                }
+                                            }
+
+
+
+
+
+
+                                            &:nth-of-type(2) {
+
+                                                border-left: 1px solid var(--BorderColor);
+                                                border-right: 1px solid var(--BorderColor);
+                                                margin: 0 10px;
+                                                padding: 0 10px;
+                                            }
+
+
+
+                                        }
+
+
+
+                                    }
+
+
+                                    /* bottom */
+                                    &:last-of-type {
+                                        margin: 10px 0 10px;
+                                        justify-content: space-between;
+                                        padding: 0 8px;
+
+                                        >a {
+                                            transition: 0.4s;
+                                            padding: 10px 15px;
+                                            border-radius: 50px;
+
+                                            &:first-of-type {
+                                                color: var(--ParagraphTextLight);
+                                            }
+
+                                            &:last-of-type {
+                                                color: rgb(130, 143, 255);
+
+                                            }
+
+                                            &:hover {
+                                                &:first-of-type {
+                                                    background-color: #202021;
+                                                }
+
+                                                &:last-of-type {
+                                                    background-color: #1a1d2f;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+
+
+                            &:hover {
+
+                                >div {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+
+
+
+
+
+                        }
+
+                        /* drop down 2 */
+                        &:nth-of-type(2) {
+
+
+                            >div {
+                                width: 67%;
+                                background-color: var(--BgBlack);
+                                position: absolute;
+                                top: 100%;
+                                left: 33%;
+                                border: 1px solid rgb(33, 34, 35);
+                                border-radius: 15px;
+                                padding: 7px;
+                                transition: 0.4s;
+                                display: flex;
+                                justify-content: center;
+                                opacity: 0;
+                                visibility: hidden;
+
+                                >div {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: start;
+                                    background-color: #151617;
+                                    border-radius: 15px;
+                                    border: 1px solid rgb(33, 34, 35);
+
+                                    /* cells */
+                                    >div {
+                                        width: 32.333%;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-content: start;
+                                        padding: 10px;
+
+                                        >a {
+                                            width: 100%;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            transition: 0.4s;
+                                            padding: 10px;
+                                            border-radius: 8px;
+                                            row-gap: 5px;
+
+                                            >span {
+
+                                                &:first-of-type {
+                                                    width: 100%;
+                                                    color: var(--ParagraphTextDark);
+                                                }
+
+                                                &:last-of-type {
+                                                    width: 80%;
+                                                    color: var(--ParagraphTextLight);
+                                                }
+                                            }
+
+                                            &:hover {
+                                                background-color: #1c1d1e;
+                                            }
+
+
+                                        }
+
+                                        &:nth-of-type(2) {
+
+                                            border-left: 1px solid var(--BorderColor);
+                                            border-right: 1px solid var(--BorderColor);
+                                            margin: 0 10px;
+                                            padding-left: 10px;
+                                            padding-right: 10px;
+                                        }
+
+
+                                    }
+                                }
+
+                            }
+
+
+
+
+                            &:hover {
+
+                                >div {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
+
+
+
+
+
+                    }
+                }
+            }
+
+            /* buttons */
+            >div {
+                border-left: 1px solid rgb(33, 34, 35);
+                padding-left: 15px;
+                display: flex;
+                column-gap: 10px;
+
+                >a {
+                    padding: 8px 15px;
+                    transition: 0.4s;
+
+                    &:first-of-type {
+                        color: var(--ParagraphTextDark);
+                        border-radius: 50px;
+
+                        &:hover {
+                            background-color: #1d1d1d;
+                        }
+                    }
+
+                    &:last-of-type {
+                        background-color: rgba(255, 255, 255, 0.85);
+                        color: black;
+                        border-radius: 15px;
+
+                        &:hover {
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*==================#2 CONTENT STYLE ==================*/
+/*=====================================================*/
+main {
+    justify-content: center;
+    align-content: start;
+
+
+    >section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        /*==================#2-1 HERO STYLE ==================*/
+        &:first-of-type {
+            height: 1080px;
+            background-image: url(../Images/Hero.png);
+            background-size: 210%;
+            background-position: center;
+            margin: 200px 0 120px;
+            align-content: start;
+            justify-content: center;
+            row-gap: 70px;
+
+            >div {
+                width: 100%;
+                max-width: 1320px;
+                display: flex;
+                flex-wrap: wrap;
+
+                /* top */
+                &:first-of-type {
+
+                    row-gap: 20px;
+
+                    >h1 {
+                        font-size: 64px;
+                        width: 70%;
+                        font-weight: 510;
+                        line-height: 1;
+                        color: var(--TitleTexts);
+                    }
+
+                    >div {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        >p {
+                            font-size: 15px;
+                            color: var(--ParagraphTextDark);
+                        }
+
+                        a {
+                            font-size: 15px;
+                            text-transform: capitalize;
+                            color: var(--ParagraphTextDark);
+                            transition: 0.4s;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            >span {
+                                color: var(--ParagraphTextLight);
+                                margin-right: 5px;
+                            }
+
+                            >i {
+                                margin-left: 3px;
+                            }
+
+                            &:hover {
+
+                                color: var(--ParagraphTextLight);
+
+                                >span {
+                                    color: var(--TitleTexts);
+                                }
+                            }
+                        }
+
+                    }
+
+
+
+
+
+
+
+
+
+                }
+
+                /* bottom */
+                &:last-of-type {
+                    height: 720px;
+                    border: 1px solid var(--BorderColor);
+                    border-radius: 15px;
+                    background-color: rgb(16, 17, 18);
+                    padding: 10px;
+
+                    >div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: start;
+
+                        /* left */
+                        &:first-of-type {
+                            width: 18.1%;
+                            padding: 10px;
+                            row-gap: 25px;
+
+                            >div {
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding: 5px;
+
+                                /* row 1 */
+                                &:first-of-type {
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    >a {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding-right: 3px;
+
+                                        >img {
+                                            width: 66px;
+                                            height: 15px;
+                                            object-fit: contain;
+                                        }
+
+                                        >i {
+                                            color: white;
+                                            color: var(--ParagraphTextDark);
+                                            font-size: 14px;
+                                            transition: 0.4s;
+                                            padding: 3px;
+                                            border-radius: 50%;
+
+                                        }
+
+                                        &:hover {
+
+                                            >i {
+                                                color: var(--ParagraphTextLight);
+                                            }
+                                        }
+
+                                    }
+
+                                    >div {
+
+                                        >a {
+
+
+                                            >i {
+                                                font-size: 14px;
+                                                transition: 0.4s;
+                                                padding: 3px;
+                                                border-radius: 50%;
+
+                                            }
+
+
+
+                                            &:first-of-type {
+                                                margin-right: 10px;
+                                                color: var(--ParagraphTextDark);
+                                            }
+
+                                            &:last-of-type {
+                                                color: var(--ParagraphTextLight);
+                                            }
+
+                                            &:hover {
+
+                                                >i {
+                                                    background-color: rgba(255, 255, 255, 0.2);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-of-type(2),
+                                &:nth-of-type(3),
+                                &:last-of-type {
+                                    row-gap: 10px;
+
+                                    >* {
+                                        font-size: 13px;
+                                        text-transform: capitalize;
+                                    }
+
+                                    >span {
+                                        color: var(--ParagraphTextDark);
+                                        margin-bottom: 5px;
+                                    }
+
+                                    >a {
+                                        width: 100%;
+                                        color: var(--ParagraphTextLight);
+                                        border-radius: 8px;
+                                        transition: 0.4s;
+                                        padding: 5px 1px;
+
+                                        >i {
+                                            color: var(--ParagraphTextDark);
+                                            margin-right: 6px;
+                                            padding-left: 5px;
+
+                                        }
+
+                                        &:hover {
+                                            background-color: rgba(128, 128, 128, 0.2);
+                                        }
+                                    }
+                                }
+
+
+                                &:last-of-type {
+
+                                    >a {
+
+                                        &:first-of-type {
+
+                                            >i {
+                                                color: #c39c04;
+                                            }
+                                        }
+
+
+
+                                        &:nth-of-type(3) {
+
+                                            >i {
+                                                color: #0396a7;
+                                            }
+                                        }
+
+                                        &:last-of-type {
+
+                                            >i {
+                                                color: #bf494a;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        /* right */
+                        &:last-of-type {
+                            width: 81.9%;
+                            border: 1px solid var(--BorderColor);
+                            border-radius: 13px;
+                            position: relative;
+
+                            >div {
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-content: start;
+
+                                /* L */
+                                &:first-of-type {
+                                    width: 69.5%;
+                                    height: 100%;
+                                    border-right: 1px solid var(--BorderColor);
+
+
+                                    >div {
+                                        width: 100%;
+                                        display: flex;
+
+                                        /* top */
+                                        &:first-of-type {
+                                            justify-content: space-between;
+                                            align-items: start;
+                                            padding: 12px 30px;
+                                            border-bottom: 1px solid var(--BorderColor);
+
+                                            >div {
+                                                display: flex;
+                                                column-gap: 10px;
+
+                                                >* {
+                                                    border-radius: 5px;
+                                                    font-size: 12px;
+                                                }
+
+                                                >span {
+                                                    display: flex;
+                                                    align-items: center;
+                                                }
+
+
+                                                >a {
+                                                    transition: 0.4s;
+                                                    padding: 3px 3px;
+
+                                                    &:hover {
+
+                                                        background-color: rgb(31, 32, 33);
+                                                    }
+                                                }
+
+                                                &:first-of-type {
+
+                                                    >span {
+                                                        color: var(--ParagraphTextLight);
+
+                                                    }
+
+                                                    >a {
+
+                                                        &:first-of-type {
+                                                            color: rgb(240, 192, 0);
+                                                        }
+
+                                                        &:last-of-type {
+                                                            color: var(--ParagraphTextDark);
+                                                        }
+
+                                                    }
+                                                }
+
+
+                                                &:last-of-type {
+
+                                                    >* {
+                                                        color: var(--ParagraphTextDark);
+                                                        font-size: 12px;
+                                                    }
+
+                                                    >span {
+                                                        margin-right: 10px;
+                                                    }
+
+                                                }
+                                            }
+                                        }
+
+                                        /* bottom */
+                                        &:last-of-type {
+                                            padding: 50px 65px;
+                                            flex-wrap: wrap;
+
+                                            >* {
+                                                width: 100%;
+                                            }
+
+                                            >h6 {
+                                                color: var(--ParagraphTextLight);
+                                                text-transform: capitalize;
+                                                margin-left: 15px;
+
+                                                &:first-of-type {
+                                                    font-size: 20px;
+                                                    margin-bottom: 12px;
+                                                }
+
+                                                &:last-of-type {
+                                                    font-size: 16px;
+                                                    margin: 30px 0 22px;
+                                                }
+                                            }
+
+                                            >p {
+                                                font-size: 14px;
+                                                color: var(--ParagraphTextDark);
+                                                line-height: 1.6;
+                                                margin-left: 15px;
+
+                                                >span {
+                                                    padding: 1px 5px;
+                                                    border-radius: 5px;
+                                                    background-color: rgb(31, 32, 33);
+                                                }
+                                            }
+
+                                            >span {
+                                                font-size: 12px;
+                                                color: var(--ParagraphTextDark);
+                                                margin-left: 15px;
+                                                display: flex;
+                                                align-items: center;
+
+                                                &:first-of-type {
+
+                                                    >img {
+                                                        width: 14px;
+                                                        height: 14px;
+                                                        object-fit: cover;
+                                                        margin-right: 10px;
+                                                    }
+                                                }
+
+                                                &:nth-of-type(2) {
+                                                    margin: 15px 0 20px 15px;
+
+                                                    >i {
+                                                        &:first-of-type {
+                                                            margin-right: 10px;
+                                                        }
+                                                    }
+                                                }
+
+                                                &:last-of-type {
+                                                    margin-top: 20px;
+
+                                                    >i {
+                                                        &:first-of-type {
+                                                            color: #c39c04;
+                                                            margin-right: 10px;
+                                                            font-size: 14px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            >div {
+                                                border: 1px solid var(--BorderColor);
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                padding: 15px;
+                                                border-radius: 8px;
+                                                background-color: rgb(21, 22, 23);
+
+                                                &:first-of-type {
+                                                    >* {
+                                                        width: 100%;
+                                                    }
+
+                                                    >span {
+                                                        font-size: 12px;
+                                                        color: var(--ParagraphTextDark);
+                                                        margin-bottom: 5px;
+                                                        display: flex;
+                                                        align-items: end;
+
+
+                                                        >strong {
+                                                            color: var(--ParagraphTextLight);
+                                                        }
+
+                                                        >img {
+                                                            width: 14px;
+                                                            height: 14px;
+                                                            object-fit: cover;
+                                                            margin-right: 10px;
+                                                        }
+
+                                                    }
+
+                                                    >p {
+                                                        font-size: 13px;
+                                                        color: var(--ParagraphTextDark);
+
+                                                        &:first-of-type {
+                                                            border-bottom: 1px solid var(--BorderColor);
+                                                            padding-bottom: 16px;
+                                                            margin-bottom: 16px;
+                                                        }
+
+                                                        &:last-of-type {
+                                                            margin-left: 20px;
+                                                        }
+                                                    }
+                                                }
+
+                                                &:last-of-type {
+                                                    margin-top: 22px;
+                                                    align-content: center;
+
+                                                    >* {
+                                                        width: 100%;
+                                                    }
+
+                                                    >span {
+                                                        font-size: 12px;
+                                                        color: var(--ParagraphTextDark);
+                                                        margin-bottom: 5px;
+                                                        display: flex;
+                                                        align-items: end;
+
+                                                        &:first-of-type {
+                                                            margin-bottom: 10px;
+
+                                                            >strong {
+                                                                color: var(--ParagraphTextLight);
+                                                                margin: 0 5px;
+                                                            }
+
+                                                            >img {
+                                                                width: 14px;
+                                                                height: 14px;
+                                                                object-fit: cover;
+                                                                margin-right: 5px;
+                                                            }
+                                                        }
+
+                                                        &:last-of-type {
+                                                            >i {
+                                                                &:first-of-type {
+                                                                    margin-right: 10px;
+                                                                }
+                                                            }
+                                                        }
+
+                                                    }
+                                                }
+                                            }
+
+
+                                        }
+                                    }
+
+
+
+
+
+
+
+
+
+                                }
+
+
+
+
+                                /* R */
+                                &:nth-of-type(2) {
+                                    width: 30.5%;
+                                    height: 100%;
+
+                                    >div {
+                                        display: flex;
+                                        width: 100%;
+
+                                        /* top */
+                                        &:first-of-type {
+                                            border-bottom: 1px solid var(--BorderColor);
+                                            justify-content: space-between;
+                                            align-items: start;
+                                            padding: 12px 30px;
+
+                                            >* {
+                                                color: var(--ParagraphTextDark);
+                                            }
+
+                                            >span {
+                                                padding: 3px 3px;
+                                                font-size: 12px;
+                                            }
+
+
+                                            >div {
+
+                                                display: flex;
+                                                column-gap: 15px;
+
+
+
+                                                >a {
+                                                    transition: 0.4s;
+                                                    padding: 3px 3px;
+                                                    border-radius: 5px;
+                                                    font-size: 12px;
+
+                                                    &:hover {
+
+                                                        background-color: rgb(31, 32, 33);
+                                                    }
+                                                }
+
+                                            }
+                                        }
+
+                                        /* bottom */
+                                        &:last-of-type {
+                                            flex-wrap: wrap;
+                                            padding: 30px;
+                                            row-gap: 10px;
+                                            align-content: start;
+
+                                            >span {
+                                                font-size: 12px;
+                                                color: var(--ParagraphTextDark);
+                                                width: 100%;
+                                                text-transform: capitalize;
+                                                display: flex;
+                                                align-items: center;
+
+                                                >i {
+                                                    margin-right: 10px;
+                                                    font-size: 16px;
+                                                }
+
+                                                &:first-of-type {
+
+                                                    >i {
+                                                        color: #c39c04;
+                                                    }
+                                                }
+
+                                                &:nth-of-type(3) {
+
+
+                                                    >img {
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        border-radius: 50%;
+                                                        object-fit: cover;
+                                                        margin-right: 10px;
+                                                    }
+                                                }
+
+                                                &:last-of-type {
+                                                    >img {
+                                                        margin-left: 50px;
+                                                        width: 60px;
+                                                        height: 15px;
+                                                        object-fit: contain;
+                                                    }
+                                                }
+                                            }
+
+
+
+
+
+
+
+                                        }
+                                    }
+                                }
+
+                                /* ABS */
+                                &:last-of-type {
+                                    width: 400px;
+                                    height: 485px;
+                                    position: absolute;
+                                    bottom: 2%;
+                                    right: 1%;
+                                    border: 1px solid var(--BorderColor);
+                                    border-radius: 13px;
+                                    background-color: rgb(21, 22, 23);
+
+                                    >div {
+                                        width: 100%;
+                                        display: flex;
+
+                                        /* top */
+                                        &:first-of-type {
+                                            border-bottom: 1px solid var(--BorderColor);
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            >div {
+                                                padding: 10px 25px;
+                                                display: flex;
+                                                column-gap: 15px;
+                                                align-items: center;
+
+                                                &:first-of-type {
+                                                    >img {
+                                                        width: 60px;
+                                                        height: 18px;
+                                                        object-fit: contain;
+                                                    }
+
+                                                    >span {
+                                                        font-size: 11px;
+                                                        border: 1px solid var(--BorderColor);
+                                                        color: var(--ParagraphTextDark);
+                                                        padding: 3px;
+                                                        border-radius: 5px;
+                                                    }
+                                                }
+
+                                                &:last-of-type {
+
+                                                    >a {
+                                                        transition: 0.4s;
+                                                        border-radius: 8px;
+                                                        color: var(--ParagraphTextDark);
+
+                                                        &:hover {
+                                                            color: var(--ParagraphTextLight);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        /* bottom */
+                                        &:last-of-type {
+                                            padding: 15px;
+                                            flex-wrap: wrap;
+                                            align-content: start;
+
+                                            >* {
+                                                width: 100%;
+                                            }
+
+                                            >span {
+                                                padding: 0 10px;
+
+                                                &:first-of-type {
+                                                    color: var(--ParagraphTextDark);
+                                                    font-size: 12px;
+
+                                                    >img {
+                                                        width: 12px;
+                                                        height: 12px;
+                                                        object-fit: cover;
+                                                    }
+                                                }
+
+                                                &:nth-of-type(2) {
+                                                    color: var(--ParagraphTextLight);
+                                                    margin: 12px 0 17px;
+                                                    font-size: 13px;
+                                                }
+
+                                                &:nth-of-type(3) {
+                                                    color: var(--ParagraphTextDark);
+                                                    font-size: 12px;
+                                                }
+
+                                                &:last-of-type {
+                                                    color: var(--ParagraphTextLight);
+                                                    margin: 17px 0 22px;
+                                                    font-size: 13px;
+                                                }
+                                            }
+
+                                            >p {
+                                                font-size: 13px;
+                                                color: var(--ParagraphTextLight);
+                                                padding: 0 5px;
+                                                width: 90%;
+                                                display: flex;
+                                                align-items: center;
+                                                margin-bottom: 10px;
+
+                                                >span {
+                                                    padding: 1px 0;
+                                                    background-color: #262728;
+                                                    border-radius: 8px;
+                                                    margin: 0 5px;
+                                                    font-size: 12px;
+                                                }
+
+                                                &:last-of-type {
+                                                    margin-bottom: 20px;
+                                                }
+
+
+                                            }
+
+                                            >div {
+                                                background-color: rgb(26, 27, 28);
+                                                border: 1px solid var(--BorderColor);
+                                                border-radius: 8px;
+
+                                                &:first-of-type {
+                                                    padding: 10px;
+
+                                                    >* {
+                                                        display: flex;
+                                                    }
+
+                                                    >div {
+                                                        justify-content: space-between;
+                                                        align-items: center;
+                                                        margin-bottom: 20px;
+
+                                                        >* {
+                                                            font-size: 12px;
+
+                                                        }
+
+                                                        >p {
+                                                            color: var(--ParagraphTextLight);
+
+                                                            >span {
+                                                                margin-left: 5px;
+
+                                                                &:first-of-type {
+                                                                    color: rgb(39, 166, 68);
+                                                                }
+
+                                                                &:last-of-type {
+                                                                    color: rgb(243, 79, 82);
+                                                                }
+                                                            }
+                                                        }
+
+                                                        >span {
+                                                            color: var(--ParagraphTextDark);
+                                                            text-transform: capitalize;
+                                                            border: 1px solid var(--BorderColor);
+                                                            padding: 5px 7px;
+                                                            border-radius: 50px;
+                                                            background-color: rgb(27, 27, 28);
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: center;
+                                                            column-gap: 10px;
+                                                        }
+                                                    }
+
+
+                                                    >span {
+
+                                                        &:first-of-type {
+                                                            font-size: 12px;
+                                                            color: var(--ParagraphTextLight);
+                                                            margin-bottom: 10px;
+
+                                                            >i {
+                                                                color: var(--ParagraphTextDark);
+                                                                margin-right: 10px;
+                                                            }
+                                                        }
+
+                                                        &:last-of-type {
+                                                            font-size: 10px;
+                                                            color: var(--ParagraphTextDark);
+                                                        }
+                                                    }
+                                                }
+
+                                                &:last-of-type {
+                                                    margin-top: 45px;
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    padding: 10px;
+
+                                                    >* {
+                                                        width: 100%;
+
+                                                    }
+
+                                                    >span {
+                                                        font-size: 16px;
+                                                        color: var(--ParagraphTextDark);
+                                                        margin-bottom: 10px;
+                                                    }
+
+                                                    >div {
+                                                        display: flex;
+                                                        justify-content: end;
+                                                        column-gap: 10px;
+
+                                                        >a {
+
+
+                                                            >i {
+                                                                font-size: 13px;
+                                                                color: var(--ParagraphTextDark);
+                                                                padding: 3px;
+                                                                transition: 0.4s;
+
+
+
+                                                            }
+
+                                                            &:last-of-type {
+                                                                >i {
+
+
+
+                                                                    border: 1px solid gray;
+                                                                    border-radius: 50%;
+                                                                }
+
+
+                                                            }
+
+                                                            &:hover {
+                                                                >i {
+                                                                    color: var(--ParagraphTextLight);
+                                                                }
+                                                            }
+                                                        }
+
+
+
+
+                                                    }
+
+
+
+
+                                                }
+                                            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
