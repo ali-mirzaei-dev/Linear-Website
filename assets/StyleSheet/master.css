@@ -30,6 +30,7 @@ header {
     left: 0;
     justify-content: center;
     align-items: center;
+    z-index: 20;
 
     >section {
         max-width: 1285px;
@@ -1298,6 +1299,1244 @@ main {
 
 
 
+        }
+
+        /*==================#2-2 A NEW SPECIES STYLE ==================*/
+        &:nth-of-type(2) {
+            justify-content: center;
+            align-content: start;
+            border-bottom: 1px solid var(--BorderColor);
+            row-gap: 100px;
+            margin-bottom: 165px;
+
+            >div {
+                width: 100%;
+                max-width: 1285px;
+                display: flex;
+                flex-wrap: wrap;
+
+                /* logos */
+                &:first-of-type {
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                /* text */
+                &:nth-of-type(2) {
+
+                    >h2 {
+                        font-size: 46px;
+                        color: var(--ParagraphTextDark);
+                        font-weight: 510;
+                        line-height: 1.3;
+                        letter-spacing: 1px;
+
+                        >span {
+                            color: var(--TitleTexts);
+                        }
+                    }
+                }
+
+                /* photos */
+                &:last-of-type {
+                    margin: 30px 0 165px;
+                    justify-content: space-between;
+
+                    >figure {
+                        width: 33.33%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: start;
+                        padding: 0 30px;
+
+                        >figcaption {
+                            display: flex;
+                            flex-wrap: wrap;
+                            row-gap: 20px;
+
+                            >* {
+                                font-size: 15px;
+                            }
+
+                            >h5 {
+                                width: 100%;
+                                color: var(--ParagraphTextLight);
+                                font-weight: 510;
+                            }
+
+                            >span {
+                                color: var(--ParagraphTextDark);
+                                width: 90%;
+                            }
+                        }
+
+
+
+                        &:nth-of-type(2) {
+                            border-left: 1px solid var(--BorderColor);
+                            border-right: 1px solid var(--BorderColor);
+                        }
+                    }
+                }
+            }
+        }
+
+        /*==================#2-3 MAKE PRODUCTS STYLE ==================*/
+        &:nth-of-type(3) {
+            border-bottom: 1px solid var(--BorderColor);
+            justify-content: center;
+            align-content: start;
+            row-gap: 100px;
+            padding-bottom: 140px;
+            margin-bottom: 130px;
+
+            >div {
+                width: 100%;
+                max-width: 1285px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: start;
+
+                /* text */
+                &:first-of-type {
+                    justify-content: space-between;
+                    align-items: start;
+
+                    >h2 {
+                        width: 40%;
+                        color: var(--TitleTexts);
+                        font-size: 48px;
+                        font-weight: 510;
+                        line-height: 48px;
+                    }
+
+
+                    >div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        row-gap: 45px;
+                        width: 45%;
+
+                        >h4 {
+                            font-size: 24px;
+                            color: var(--ParagraphTextLight);
+                            font-weight: 400;
+                        }
+
+                        >a {
+                            width: 100%;
+                            font-size: 15px;
+                            color: var(--ParagraphTextDark);
+                            transition: 0.4s;
+
+                            &:hover {
+                                color: var(--ParagraphTextLight);
+                            }
+                        }
+                    }
+                }
+
+                /* box */
+                &:nth-of-type(2) {
+                    border-top: 1px solid var(--BorderColor);
+                    padding: 10px;
+                    position: relative;
+
+                    >div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: start;
+
+                        /* inner box */
+                        &:first-of-type {
+                            width: 100%;
+                            border-top: 1px solid var(--BorderColor);
+                            justify-content: end;
+
+                            >div {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: end;
+
+                                /* top */
+                                &:first-of-type {
+                                    column-gap: 15px;
+
+                                    /* cells */
+                                    >div {
+                                        padding: 25px 5px;
+                                        width: 300px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        column-gap: 10px;
+
+                                        >* {
+                                            font-size: 12px;
+                                        }
+
+                                        &:first-of-type {
+                                            color: var(--ParagraphTextDark);
+                                            justify-content: end;
+                                        }
+
+                                        &:nth-of-type(2),
+                                        &:nth-of-type(3) {
+
+                                            >div {
+                                                display: flex;
+                                                column-gap: 10px;
+
+                                                &:first-of-type {
+
+                                                    >i {
+                                                        font-size: 14px;
+                                                    }
+
+                                                    >span {
+                                                        &:first-of-type {
+                                                            color: var(--ParagraphTextLight);
+                                                        }
+
+                                                        &:last-of-type {
+                                                            color: var(--ParagraphTextDark);
+                                                        }
+                                                    }
+                                                }
+
+                                                &:last-of-type {
+                                                    color: var(--ParagraphTextDark);
+                                                }
+                                            }
+
+                                        }
+
+                                        &:nth-of-type(2) {
+
+                                            >div {
+
+                                                &:first-of-type {
+                                                    >i {
+                                                        color: var(--ParagraphTextDark);
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &:nth-of-type(3) {
+
+                                            >div {
+
+                                                &:first-of-type {
+                                                    >i {
+                                                        color: #c39c04;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &:last-of-type {
+                                            width: 100px;
+                                            justify-content: start;
+
+                                            >i {
+                                                color: black;
+                                                padding: 1px;
+                                                border-radius: 50%;
+                                                background-color: #08daf18e;
+                                            }
+
+                                            >span {
+                                                color: var(--ParagraphTextLight);
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                                /* bottom */
+                                &:last-of-type {
+                                    width: 95%;
+                                    column-gap: 15px;
+
+                                    /* columns */
+                                    >div {
+                                        width: 300px;
+                                        height: 410px;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-content: start;
+                                        row-gap: 10px;
+
+                                        /* cells */
+                                        >div {
+                                            width: 100%;
+                                            height: 95px;
+                                            border-radius: 10px;
+                                            border: 1px solid var(--BorderColor);
+                                            background-color: rgb(17, 18, 19);
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            align-content: space-between;
+                                            padding: 10px;
+
+                                            >div {
+                                                width: 100%;
+                                                display: flex;
+                                                flex-wrap: wrap;
+
+                                                /* top */
+                                                &:first-of-type {
+                                                    justify-content: space-between;
+
+                                                    >span {
+
+                                                        &:first-of-type {
+                                                            width: 90%;
+                                                            font-size: 10px;
+                                                            color: var(--ParagraphTextDark);
+                                                        }
+
+                                                        &:last-of-type {
+                                                            width: 100%;
+                                                            font-size: 12px;
+                                                            color: var(--ParagraphTextLight);
+                                                        }
+                                                    }
+
+                                                    >i {
+                                                        font-size: 18px;
+                                                        color: var(--ParagraphTextDark);
+
+                                                    }
+
+                                                    >img {
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        object-fit: cover;
+                                                    }
+                                                }
+
+                                                /* bottom */
+                                                &:last-of-type {
+                                                    column-gap: 5px;
+
+                                                    >* {
+                                                        padding: 3px;
+                                                        border-radius: 5px;
+                                                        background-color: rgb(27, 27, 28);
+                                                        font-size: 10px;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
+
+                                                    >i {
+                                                        color: var(--ParagraphTextDark);
+                                                        font-size: 16px;
+                                                    }
+
+                                                    >span {
+                                                        color: var(--ParagraphTextLight);
+
+                                                        >i {
+                                                            color: var(--ParagraphTextDark);
+                                                            font-size: 20px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+
+                                        &:nth-of-type(2) {
+
+
+                                            >div {
+
+                                                &:first-of-type,
+                                                &:nth-of-type(2) {
+
+                                                    >div {
+
+                                                        &:last-of-type {
+
+                                                            >span {
+
+                                                                &:first-of-type {
+                                                                    >i {
+                                                                        color: red;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                &:nth-of-type(3) {
+                                                    >div {
+
+                                                        &:last-of-type {
+
+                                                            >span {
+
+                                                                &:first-of-type {
+                                                                    >i {
+                                                                        color: blue;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                &:last-of-type {
+                                                    >div {
+
+                                                        &:last-of-type {
+
+                                                            >span {
+
+                                                                &:first-of-type {
+                                                                    >i {
+                                                                        color: limegreen;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &:nth-of-type(3) {
+                                            >div {
+
+                                                &:first-of-type {
+                                                    >div {
+
+                                                        &:last-of-type {
+
+                                                            >span {
+
+                                                                &:first-of-type {
+                                                                    >i {
+                                                                        color: rgb(31, 124, 31);
+                                                                        font-size: 16px;
+                                                                        margin-right: 5px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                &:nth-of-type(2) {
+                                                    >div {
+
+                                                        &:last-of-type {
+
+                                                            >span {
+
+                                                                &:first-of-type {
+                                                                    >i {
+                                                                        color: purple;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                &:nth-of-type(3) {
+                                                    >div {
+
+                                                        &:last-of-type {
+
+                                                            >span {
+
+                                                                &:first-of-type {
+                                                                    >i {
+                                                                        color: red;
+                                                                    }
+                                                                }
+
+                                                                &:last-of-type {
+                                                                    >i {
+                                                                        color: rgb(31, 124, 31);
+                                                                        font-size: 16px;
+                                                                        margin-right: 5px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+                                        }
+
+
+
+
+                                        &:last-of-type {
+                                            width: 100px;
+
+                                            >div {
+
+                                                >div {
+
+                                                    &:first-of-type {
+                                                        row-gap: 5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+
+                        /* shadow */
+                        &:nth-of-type(2) {
+                            position: absolute;
+                            width: 100%;
+                            height: 110%;
+                            z-index: 2;
+                            top: -5%;
+                            right: 0;
+                            background: #000000;
+                            background: linear-gradient(90deg, rgba(0, 0, 0, 0.13) 0%, rgba(8, 9, 10, 1) 99%);
+
+                        }
+
+
+
+
+                        /* ABS box */
+                        &:last-of-type {
+                            width: 480px;
+                            height: 570px;
+                            position: absolute;
+                            top: -30px;
+                            left: -20px;
+                            z-index: 10;
+                            border: 1px solid var(--BorderColor);
+                            border-radius: 15px;
+                            background-color: rgb(16, 17, 18);
+
+                            >div {
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding: 10px;
+
+                                /* header */
+                                &:first-of-type {
+                                    justify-content: space-between;
+                                    align-content: start;
+                                    padding: 20px;
+                                    border-bottom: 1px solid var(--BorderColor);
+
+                                    >* {
+                                        color: var(--ParagraphTextDark);
+                                        font-size: 14px;
+                                    }
+
+                                    >span {
+
+                                        >i {}
+
+                                        >strong {}
+                                    }
+
+                                    >i {}
+                                }
+
+                                /* messages */
+                                &:last-of-type {
+                                    padding: 45px 20px 0;
+                                    align-content: space-between;
+
+                                    >div {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-content: space-between;
+                                        row-gap: 25px;
+
+                                        /* avatars */
+                                        &:first-of-type {
+
+                                            >div {
+                                                display: flex;
+                                                align-items: start;
+                                                column-gap: 10px;
+
+                                                >img {
+                                                    width: 35px;
+                                                    height: 35px;
+                                                    object-fit: cover;
+                                                    border-radius: 5px;
+                                                    margin-top: 5px;
+                                                }
+
+                                                >div {
+                                                    >span {
+                                                        &:first-of-type {
+                                                            font-size: 15px;
+                                                            color: var(--ParagraphTextLight);
+                                                            margin-right: 5px;
+                                                        }
+
+                                                        &:last-of-type {
+                                                            font-size: 12px;
+                                                            color: rgb(98, 102, 109);
+                                                        }
+                                                    }
+
+                                                    >p {
+                                                        font-size: 15px;
+                                                        color: var(--ParagraphTextDark);
+                                                        margin-top: 5px;
+                                                    }
+                                                }
+                                            }
+
+
+
+
+
+
+
+
+
+
+
+                                        }
+
+                                        /* text box */
+                                        &:last-of-type {
+                                            border: 1px solid var(--BorderColor);
+                                            border-radius: 8px;
+                                            margin-top: 35px;
+                                            background-color: rgb(21, 22, 23);
+                                            padding: 10px;
+                                            align-content: space-between;
+
+                                            >p {
+                                                font-size: 15px;
+                                                color: var(--ParagraphTextLight);
+
+                                                >span {
+                                                    color: rgb(109, 120, 213);
+                                                }
+                                            }
+
+                                            >div {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                margin-top: 60px;
+
+                                                >div {
+                                                    display: flex;
+                                                    column-gap: 5px;
+
+                                                    >i {
+                                                        font-size: 20px;
+                                                        color: var(--ParagraphTextDark);
+                                                        font-weight: 100;
+                                                        padding: 5px;
+
+                                                        &:first-of-type {
+                                                            border-radius: 50%;
+                                                            background-color: #222324;
+                                                        }
+
+                                                        &:nth-of-type(5),
+                                                        &:last-of-type {
+                                                            border-left: 1px solid var(--BorderColor);
+                                                            padding-left: 10px;
+                                                        }
+                                                    }
+                                                }
+
+                                                >a {
+                                                    background-color: rgb(94, 106, 209);
+                                                    padding: 5px 12px;
+                                                    border-radius: 5px;
+
+                                                    >i {
+                                                        font-size: 13px;
+                                                        color: var(--ParagraphTextLight);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+
+                    }
+
+                }
+
+                /* nubers */
+                &:last-of-type {
+                    display: flex;
+                    justify-content: end;
+
+                    >div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        row-gap: 10px;
+
+                        >a {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 10px;
+                            width: 100%;
+                            font-size: 15px;
+                            color: var(--ParagraphTextDark);
+                            text-transform: capitalize;
+                            transition: 0.4s;
+
+                            >span {
+                                color: rgb(98, 102, 109);
+                                transition: 0.4s;
+                            }
+
+                            >i {
+                                font-size: 13px;
+                                opacity: 0;
+                                transition: 0.4s;
+                                color: var(--ParagraphTextLight);
+                            }
+
+                            &:hover {
+                                color: var(--ParagraphTextLight);
+
+                                >span {
+                                    color: var(--ParagraphTextDark);
+                                }
+
+                                >i {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        &:last-of-type {
+                            border-left: 1px solid var(--BorderColor);
+                            padding-left: 30px;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        /*==================#2-4 DEFINE STYLE ==================*/
+        &:nth-of-type(4) {
+            border-bottom: 1px solid var(--BorderColor);
+            justify-content: center;
+            align-content: start;
+            row-gap: 100px;
+            padding-bottom: 140px;
+            margin-bottom: 130px;
+
+            >div {
+                width: 100%;
+                max-width: 1285px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: start;
+
+                /* text */
+                &:first-of-type {
+                    justify-content: space-between;
+                    align-items: start;
+
+                    >h2 {
+                        width: 40%;
+                        color: var(--TitleTexts);
+                        font-size: 48px;
+                        font-weight: 510;
+                        line-height: 48px;
+                    }
+
+
+                    >div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        row-gap: 45px;
+                        width: 45%;
+
+                        >h4 {
+                            font-size: 24px;
+                            color: var(--ParagraphTextLight);
+                            font-weight: 400;
+                        }
+
+                        >a {
+                            width: 100%;
+                            font-size: 15px;
+                            color: var(--ParagraphTextDark);
+                            transition: 0.4s;
+
+                            &:hover {
+                                color: var(--ParagraphTextLight);
+                            }
+                        }
+                    }
+                }
+
+                /* boxes */
+                &:nth-of-type(2) {
+                    border-top: 1px solid var(--BorderColor);
+                    padding: 10px;
+                    position: relative;
+
+
+                    >div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: start;
+
+                        /* inner box */
+                        &:first-of-type {
+                            width: 100%;
+                            border-top: 1px solid var(--BorderColor);
+                            justify-content: space-between;
+                            height: 520px;
+                            background-color: rgb(14, 14, 15);
+
+                            /* columns */
+                            >div {
+                                width: 155px;
+                                height: 100%;
+                                padding: 10px;
+
+                                /* bar */
+                                >div {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    font-size: 12px;
+                                    color: rgb(98, 102, 109);
+                                    row-gap: 5px;
+
+                                    >div {
+                                        display: flex;
+                                        width: 100%;
+
+
+
+                                        /* month */
+                                        &:first-of-type {
+                                            width: 100%;
+
+                                            >span {
+                                                width: 25%;
+
+                                                &:nth-of-type(2) {
+                                                    border-right: 1px dashed var(--BorderColor);
+                                                    border-left: 1px dashed var(--BorderColor);
+                                                }
+
+                                                &:last-of-type {
+                                                    border-left: 1px dashed var(--BorderColor);
+                                                }
+
+                                            }
+                                        }
+
+                                        /* days */
+                                        &:last-of-type {
+                                            justify-content: center;
+                                            column-gap: 10px;
+
+                                            >span {
+                                                display: flex;
+                                                justify-content: center;
+                                                width: 20%;
+                                            }
+                                        }
+                                    }
+                                }
+
+
+
+
+
+
+                                &:nth-of-type(2),
+                                &:nth-of-type(4),
+                                &:nth-of-type(6),
+                                &:nth-of-type(8) {
+                                    border-right: 1px dashed var(--BorderColor);
+                                    border-left: 1px dashed var(--BorderColor);
+                                }
+                            }
+                        }
+
+
+                        /* shadow left & right*/
+                        &:nth-of-type(2) {
+                            position: absolute;
+                            width: 100%;
+                            height: 110%;
+                            z-index: 2;
+                            top: -5%;
+                            right: 0;
+                            background: #08090A;
+                            background: radial-gradient(circle, rgba(8, 9, 10, 0) 0%, rgba(8, 9, 10, 1) 100%);
+                        }
+
+                        /* shadow bottom */
+                        &:nth-of-type(3) {
+
+
+
+                            position: absolute;
+                            width: 100%;
+                            height: 110%;
+                            z-index: 2;
+                            bottom: -5%;
+                            right: 0;
+                            background: #08090A;
+                            background: linear-gradient(180deg, rgba(8, 9, 10, 0) 0%, rgba(8, 9, 10, 0.8) 100%);
+                        }
+
+
+                        /* ABS box */
+                        &:last-of-type {
+                            width: 400px;
+                            height: 460px;
+                            position: absolute;
+                            bottom: 0;
+                            left: -10px;
+                            z-index: 10;
+                            border: 1px solid var(--BorderColor);
+                            border-radius: 15px;
+                            background-color: rgb(16, 17, 18);
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            >div {
+                                width: 100%;
+                                padding: 20px;
+
+                                /* header */
+                                &:first-of-type {
+
+                                    >h6 {
+                                        font-size: 14px;
+                                        color: var(--ParagraphTextLight);
+                                    }
+                                }
+
+                                /* row 1 & 2 */
+                                &:nth-of-type(2),
+                                &:last-of-type {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    row-gap: 30px;
+
+                                    >div {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding-right: 10px;
+
+                                        >a {
+                                            display: flex;
+                                            align-items: center;
+                                            font-size: 14px;
+                                            color: var(--ParagraphTextLight);
+
+                                            >i {
+                                                font-size: 16px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                margin-right: 10px;
+                                                padding: 7px;
+                                                border-radius: 50%;
+                                                background-color: #0f3338;
+                                                color: #0396a7;
+                                            }
+                                        }
+
+                                        >span {
+                                            display: flex;
+                                            align-items: center;
+                                            color: var(--ParagraphTextLight);
+                                            font-size: 13px;
+                                            text-transform: capitalize;
+
+                                            >i {
+                                                color: rgb(2, 184, 204);
+                                                font-size: 16px;
+                                                margin-right: 10px;
+                                            }
+
+                                            &:last-of-type {
+                                                color: var(--ParagraphTextDark);
+                                            }
+
+                                        }
+
+                                        &:first-of-type {
+                                            background-color: #191a1b00;
+                                            border-radius: 8px;
+                                            transition: 0.4s;
+
+                                            &:hover {
+                                                background-color: #191a1b;
+                                            }
+                                        }
+
+                                        &:nth-of-type(2),
+                                        &:nth-of-type(3),
+                                        &:last-of-type {
+                                            padding-left: 40px;
+                                        }
+
+
+                                    }
+                                }
+
+
+                                /* row 1 */
+                                &:nth-of-type(2) {
+                                    border-top: 1px solid var(--BorderColor);
+                                    border-bottom: 1px solid var(--BorderColor);
+                                    position: relative;
+
+                                    >div {
+
+                                        &:first-of-type {
+                                            &::before {
+                                                content: "";
+                                                height: 20px;
+                                                width: 20px;
+                                                position: absolute;
+                                                top: 158px;
+                                                left: 34px;
+                                                border-left: 1px solid var(--BorderColor);
+                                                border-bottom: 1px solid var(--BorderColor);
+                                                border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%;
+
+                                            }
+                                        }
+
+                                        &::before {
+                                            content: "";
+                                            height: 20px;
+                                            width: 20px;
+                                            position: absolute;
+                                            top: 68px;
+                                            left: 34px;
+                                            border-left: 1px solid var(--BorderColor);
+                                            border-bottom: 1px solid var(--BorderColor);
+                                            border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%;
+
+                                        }
+
+                                        &::after {
+                                            content: "";
+                                            height: 20px;
+                                            width: 20px;
+                                            position: absolute;
+                                            top: 110px;
+                                            left: 34px;
+                                            border-left: 1px solid var(--BorderColor);
+                                            border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%;
+                                            border-bottom: 1px solid var(--BorderColor);
+                                        }
+                                    }
+
+                                    &::before {
+                                        content: "";
+                                        width: 1px;
+                                        height: 105px;
+                                        background-color: var(--BorderColor);
+                                        position: absolute;
+                                        top: 54px;
+                                        left: 34px;
+
+                                    }
+
+                                }
+
+                                /* row 2 */
+                                &:last-of-type {
+                                    position: relative;
+
+                                    >div {
+                                        >a {
+                                            >i {
+                                                background-color: rgb(66, 34, 34);
+                                                color: rgb(235, 87, 87);
+                                                font-size: 16px;
+                                            }
+                                        }
+
+                                        >span {
+
+
+                                            >i {
+                                                color: rgb(235, 87, 87);
+                                                font-size: 16px;
+                                            }
+
+                                        }
+
+                                        &::before {
+                                            content: "";
+                                            height: 20px;
+                                            width: 20px;
+                                            position: absolute;
+                                            top: 68px;
+                                            left: 34px;
+                                            border-left: 1px solid var(--BorderColor);
+                                            border-bottom: 1px solid var(--BorderColor);
+                                            border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%;
+
+                                        }
+
+                                        &::after {
+                                            content: "";
+                                            height: 20px;
+                                            width: 20px;
+                                            position: absolute;
+                                            top: 110px;
+                                            left: 34px;
+                                            border-left: 1px solid var(--BorderColor);
+                                            border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%;
+                                            border-bottom: 1px solid var(--BorderColor);
+                                        }
+
+                                    }
+
+                                    &::before {
+                                        content: "";
+                                        width: 1px;
+                                        height: 56px;
+                                        background-color: var(--BorderColor);
+                                        position: absolute;
+                                        top: 54px;
+                                        left: 34px;
+
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }
+
+                /* numbers */
+                &:last-of-type {
+                    display: flex;
+                    justify-content: end;
+
+                    >div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        row-gap: 10px;
+
+                        >a {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 10px;
+                            width: 100%;
+                            font-size: 15px;
+                            color: var(--ParagraphTextDark);
+                            text-transform: capitalize;
+                            transition: 0.4s;
+
+                            >span {
+                                color: rgb(98, 102, 109);
+                                transition: 0.4s;
+                            }
+
+                            >i {
+                                font-size: 13px;
+                                opacity: 0;
+                                transition: 0.4s;
+                                color: var(--ParagraphTextLight);
+                            }
+
+                            &:hover {
+                                color: var(--ParagraphTextLight);
+
+                                >span {
+                                    color: var(--ParagraphTextDark);
+                                }
+
+                                >i {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        &:last-of-type {
+                            border-left: 1px solid var(--BorderColor);
+                            padding-left: 30px;
+                        }
+                    }
+
+
+                }
+            }
         }
     }
 }
