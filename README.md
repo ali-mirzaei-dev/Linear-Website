@@ -10,15 +10,15 @@ This project is currently under development and is being recreated as part of my
 
 ### Header
 
-Screenshot coming soon.
+![Header](https://github.com/user-attachments/assets/cbbf6340-9ea9-4ddd-9216-12b4a5b0d6db)
 
 ### Content Section
 
-Screenshot coming soon.
+![Content Section](https://github.com/user-attachments/assets/5f0d3503-16da-461c-acd9-1c243dfcdf89)
 
-### Footer
+### Content Section
 
-Screenshot coming soon.
+![Content Section](https://github.com/user-attachments/assets/5b187893-c64b-45c3-a91c-86a9d52224f3)
 
 ## 🎯 Project Goal
 
