@@ -38,7 +38,7 @@ The purpose of this project is to practice:
 
 ## 📌 Project Status
 
-* 🚧 In Progress
+* ✔ Completed
 * ❌ Not responsive (desktop-only)
 * 🔄 Future improvement: add responsiveness and JavaScript features
 
